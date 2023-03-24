@@ -43,4 +43,4 @@ fare = st.slider('Fare', 0, 600, 10)
 # embarked = st.selectbox('Embarked', ['S', 'C', 'Q'])
 if st.button('Predict'):
     result = predict_survival_rate(pclass, sex, age, sibsp, parch, fare)
-    st.success(f'The passenger is likely to {result}.')
+    st.text(f'The passenger is likely to {result}.')
