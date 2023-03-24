@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("datasets/titanic.csv")
+df = pd.read_csv("titanic.csv")
 df.drop(['Name'], axis=1, inplace=True)
 
 df['Age'].fillna(df['Age'].mean(), inplace=True)
